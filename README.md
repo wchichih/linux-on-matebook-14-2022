@@ -47,7 +47,7 @@ See:
 
 And the other way you can do with sleep problem:
 
-BUY A NEW SSD DRIVE AND REPLACES OLD ONE. IT WORKS.
+**BUY A NEW SSD DRIVE AND REPLACES OLD ONE. IT WORKS.**
 
 ### Soundcard
 
