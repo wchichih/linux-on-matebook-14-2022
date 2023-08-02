@@ -43,9 +43,9 @@ As a workaround, add the kernel parameter `nvme_core.default_ps_max_latency_us=0
 
 see:
 
-* [NVMe#Controller_failure_due_to_broken_APST_support](https://wiki.archlinux.org/title/Solid_state_drive/NVMe#Controller_failure_due_to_broken_APST_support)
+* [\[Archwiki\] NVMe#Controller_failure_due_to_broken_APST_support](https://wiki.archlinux.org/title/Solid_state_drive/NVMe#Controller_failure_due_to_broken_APST_support)
 
-* [matebook x pro with ubuntu 20.04 also 22.04 can not resume from suspend or hibernation](https://askubuntu.com/questions/1404097/matebook-x-pro-with-ubuntu-20-04-also-22-04-can-not-resume-from-suspend-or-hiber)
+* [\[Askubuntu\] matebook x pro with ubuntu 20.04 also 22.04 can not resume from suspend or hibernation](https://askubuntu.com/questions/1404097/matebook-x-pro-with-ubuntu-20-04-also-22-04-can-not-resume-from-suspend-or-hiber)
 
 ### Soundcard
 
@@ -55,7 +55,7 @@ sound volume too low, need to adjust volume using `alsamixer`, set DAC to 100%.
 
 microphone not working by default, use `alsa-ucm-conf` and select `pro audio` profile can see microphone device, but may cause other sound problems.
 
-see [\[ADL-P\] Missing topology for ES8336 Alder Lake P device (i5-1240P Huawei Matebook 14 2022)](https://github.com/thesofproject/linux/issues/4111)
+see Github issue: [\[ADL-P\] Missing topology for ES8336 Alder Lake P device (i5-1240P Huawei Matebook 14 2022)](https://github.com/thesofproject/linux/issues/4111)
 
 ### Fingerprint
 
