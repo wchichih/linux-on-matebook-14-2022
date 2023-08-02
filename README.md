@@ -1,5 +1,5 @@
 # linux-on-matebook-14-2022
-running Linux on huawei matebook 14 2022 intel
+Running Linux on huawei matebook 14 2022 intel(KLVF-XX)
 
 ![图片](https://github.com/alim0x/linux-on-matebook-14-2022/assets/4954007/bed9763e-1688-4be9-963f-34e9a78f00fa)
 
@@ -27,7 +27,7 @@ running Linux on huawei matebook 14 2022 intel
 
 ### Sleep
 
-can't wakeup from sleep, maybe it is because that the nvme has entered power saving state before rest filesys sync the data to nvme.
+Can't wakeup from sleep. All hardware is waking up except SSD drive, maybe it is because that the nvme has entered power saving state.
 
 ```
 Supported Power States
@@ -41,21 +41,23 @@ St Op     Max   Active     Idle   RL RT WL WT  Ent_Lat  Ex_Lat
 
 As a workaround, add the kernel parameter `nvme_core.default_ps_max_latency_us=0` to completely disable APST, or set a custom threshold to disable specific states. For example, to disable PS4 set `nvme_core.default_ps_max_latency_us=2000`. 
 
-see:
+See:
 
 * [\[Archwiki\] NVMe#Controller_failure_due_to_broken_APST_support](https://wiki.archlinux.org/title/Solid_state_drive/NVMe#Controller_failure_due_to_broken_APST_support)
 
-* [\[Askubuntu\] matebook x pro with ubuntu 20.04 also 22.04 can not resume from suspend or hibernation](https://askubuntu.com/questions/1404097/matebook-x-pro-with-ubuntu-20-04-also-22-04-can-not-resume-from-suspend-or-hiber)
+And the other way you can do with sleep problem:
+
+BUY A NEW SSD DRIVE AND REPLACES OLD ONE. IT WORKS.
 
 ### Soundcard
 
-works with most recent sof-firmware(v2.2.5 or newer), but not perfect.
+Works with most recent sof-firmware(v2.2.5 or newer), but not perfect.
 
-sound volume too low, need to adjust volume using `alsamixer`, set DAC to 100%.
+Sound volume too low, need to adjust volume using `alsamixer`, set DAC to 100%.
 
-microphone not working by default, use `alsa-ucm-conf` and select `pro audio` profile can see microphone device, but may cause other sound problems.
+Microphone not working by default, use `alsa-ucm-conf` and select `pro audio` profile can see microphone device, but may cause other sound problems.
 
-see Github issue: [\[ADL-P\] Missing topology for ES8336 Alder Lake P device (i5-1240P Huawei Matebook 14 2022)](https://github.com/thesofproject/linux/issues/4111)
+See Github issue: [\[ADL-P\] Missing topology for ES8336 Alder Lake P device (i5-1240P Huawei Matebook 14 2022)](https://github.com/thesofproject/linux/issues/4111)
 
 ### Fingerprint
 
