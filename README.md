@@ -49,7 +49,7 @@ see:
 
 ### Soundcard
 
-works with most recent sof-firmware, but not perfect.
+works with most recent sof-firmware(v2.2.5 or newer), but not perfect.
 
 sound volume too low, need to adjust volume using `alsamixer`, set DAC to 100%.
 
