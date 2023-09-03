@@ -55,7 +55,7 @@ Works with most recent sof-firmware(v2.2.5 or newer), but not perfect.
 
 Sound volume too low, need to adjust volume using `alsamixer`, set DAC to 100%.
 
-And need to set volume of `HeadPhone` in `alsamixer` to get a normal volume, or use command `alsactl restore`.
+**[Every boot]** And need to set volume of `HeadPhone` in `alsamixer` to get a normal volume, or use command `alsactl restore`.
 
 ![图片](https://github.com/eniqiz/linux-on-matebook-14-2022/assets/4954007/24a6f174-de78-4b28-b493-9dd4ca58f6ea)
 
