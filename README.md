@@ -12,9 +12,9 @@ Running Linux on huawei matebook 14 2022 intel(KLVF-XX)
 | Storage | 512 GB NVMe PCIe SSD | ⚠️ Yes | problem with wakeup from sleep, see [Sleep](#sleep) |
 | Wifi | Intel AX201 (a/b/g/n/ac/ax) | ✔ Yes |  |
 | Bluetooth | Intel AX201 Bluetooth | ✔ Yes |  |
-| Soundcard  | Intel Corporation Alder Lake PCH-P High Definition Audio Controller | ⚠️ Yes  | see [Soundcard](#soundcard) for details |
-| Speakers  |  | ⚠️ Yes | see [Soundcard](#soundcard) for details |
-| Microphone | | ⚠️ Yes | see [Soundcard](#soundcard) for details |
+| Soundcard  | Intel Corporation Alder Lake PCH-P High Definition Audio Controller | ✔ Yes  | see [Soundcard](#soundcard) for details |
+| Speakers  |  | ✔ Yes | see [Soundcard](#soundcard) for details |
+| Microphone | | ✔ Yes | see [Soundcard](#soundcard) for details |
 | Webcam | HD 720P | ✔ Yes |  |
 | Ports | USB-C × 1<br>USB3.2 Gen 1 × 2<br>HDMI × 1<br>3.5 mm headset and microphone 2-in-1 jack × 1 | ✔ Yes | USB-C support data, charging and DisplayPort |
 | Power button |  | ✔ Yes |  |
@@ -51,7 +51,7 @@ And the other way you can do with sleep problem:
 
 ### Soundcard
 
-**UPDATE:** after update of `alsa-conf-ucm` to `1.2.10`，microphone can be showed in control center correctly, and volume can be remembered after reboot.
+😄**UPDATE:** after update of `alsa-conf-ucm` to `1.2.10`，microphone can be showed in control center correctly, and volume can be remembered after reboot.
 
 Works with most recent sof-firmware(v2.2.5 or newer), but not perfect.
 
