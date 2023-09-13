@@ -51,6 +51,8 @@ And the other way you can do with sleep problem:
 
 ### Soundcard
 
+**UPDATE:** after update of `alsa-conf-ucm` to `1.2.10`，microphone can be showed in control center correctly, and volume can be remembered after reboot.
+
 Works with most recent sof-firmware(v2.2.5 or newer), but not perfect.
 
 Sound volume too low, need to adjust volume using `alsamixer`, set DAC to 100%.
