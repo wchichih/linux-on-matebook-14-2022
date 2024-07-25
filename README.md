@@ -24,6 +24,11 @@ Running Linux on huawei matebook 14 2022 intel(KLVF-XX)
 | Power management | |  |  |
 | Keyboard |  | ✔ Yes |  |
 | Touchpad |  | ✔ Yes |  |
+| BIOS update |  | ✔ Yes |  |
+
+### BIOS update
+
+Check：[Update your Huawei Matebook Pro X (and others) from the Linux shell with fwupd](https://gist.github.com/derjohn/2c19554415cea09830225314c2072807)
 
 ### Sleep
 
